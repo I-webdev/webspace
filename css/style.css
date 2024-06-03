@@ -1,0 +1,278 @@
+body {
+  font-family: "lora", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/************************************************************** first-section **************************************************/
+.mynav {
+  background-color: #0a1b2b;
+  color: white;
+}
+
+nav .navbar-nav .bt {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #f76707;
+}
+
+.home-page {
+  background-color: #0a1b2b;
+  color: white;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.btn-second {
+  border: none;
+  border-radius: 10px;
+  background-color: #f76707
+}
+
+.carousel-topbanner h1 {
+  margin-bottom: 60px;
+  font-size: 50px;
+}
+
+.carousel-topbanner .home-indicator button {
+  position: relative;
+  bottom: 70px;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.carousel-topbanner .home-indicator .active {
+  background-color: white;
+}
+
+.carousel-topbanner p {
+  margin-bottom: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 16px;
+}
+
+/*************************************************** second-section ****************************************************/
+.second-section {
+  padding-top: 68px;
+  padding-bottom: 100px;
+  background-color: white;
+  color: #0a1b2b;
+}
+
+.mypills {
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+
+.tabs .mypills .active {
+  background-color: #0a1b2b;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tabs .nav-link {
+  color: #0a1b2b;
+}
+
+/********************************************** third-section********************************************* */
+.third-section {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-color: #0a1b2b;
+  color: white;
+}
+
+.how-we-work h1 {
+  color: #ffa94d
+}
+
+.hww-contents {
+  width: 87%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.hww-content0 {
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.hww-content1 {
+  margin-right: 100px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.hww-content2 {
+  vertical-align: top;
+  display: inline-block;
+}
+
+/***************************************************** fouth-section *************************************************/
+.forth-section {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-color: white;
+  color: #0a1b2b;
+}
+
+.testimonial-headline {
+  margin-bottom: 150px;
+}
+
+button .carousel-control1 {
+  position: relative;
+  top: 240px;
+}
+
+button .carousel-control2 {
+  position: relative;
+  right: 880px;
+  top: 240px;
+}
+
+.indicators .active {
+  background-color: #f76707;
+}
+
+.carousel-testimonial .indicators button {
+  position: relative;
+  left: 350px;
+  top: 40px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #f76707;
+  border-radius: 50%;
+}
+
+/***************************************************** footer-section ****************************************************/
+/* https://media.istockphoto.com/photos/house-drawing-picture-id177244659?b=1&k=20&m=177244659&s=170667a&w=0&h=-erxj7CsY8Y42JAEWVEwwCK-YD5TztuxLCw5wMV5mSo= */
+footer {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 139px;
+  padding-right: 139px;
+  background-color: #0a1b2b;
+  color: white;
+}
+
+.footer-image {
+  width: 50px;
+}
+
+.footer-logo{
+  text-align: center;
+}
+
+
+
+/************************** animation ************************************/
+
+.anim1{
+  opacity: 0;
+  transform:translateY(110px);
+  animation: moveup 1.5s ease forwards;
+}
+
+@keyframes moveup {
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim2{
+  opacity: 0;
+  transform:translateX(100px);
+  animation: moveleft 1.5s ease forwards;
+}
+
+@keyframes moveleft {
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.anim3{
+  opacity: 0;
+  transform:translateY(-80px);
+  animation: movedown 1.5s ease forwards;
+}
+
+@keyframes movedown {
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim4{
+  opacity: 0;
+  transform:translateX(-60px);
+  animation: movedown 1.5s ease forwards;
+}
+
+@keyframes movedown {
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/******************************************************* media **********************************************/
+
+@media screen and (max-width: 767px) {
+  .carousel-topbanner h1 {
+    font-size: 30px;
+  }
+
+  .carousel-topbanner p {
+    margin: 41px auto 0;
+    width: 100%;
+  }
+
+  .btn-second {
+    width: 52%;
+  }
+
+  .carousel-topbanner .home-indicator button {
+    position: relative;
+    bottom: 50px;
+  }
+
+  button .carousel-control1 {
+    position: absolute;
+    top: 840px;
+  }
+
+  button .carousel-control2 {
+    position: relative;
+    right: 880px;
+    top: 240px;
+  }
+
+  .carousel-testimonial .indicators button {
+    position: relative;
+    left: 20px;
+    top: 40px;
+  }
+
+  .footer-logo{
+    text-align: left;
+  }
+
+  footer .container .row {
+    text-align: left;
+  }
+}
